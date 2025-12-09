@@ -1,0 +1,15 @@
+package Giriş;
+
+import java.util.Scanner;
+
+public class uygulama2 {
+    public static void main(String[] args) {
+        double tutar,kdvOran= 0.18;
+        Scanner input=new Scanner(System.in);
+        System.out.print("ücretinizi giriniz: ");
+        tutar=input.nextDouble();
+        double kdvTutar=tutar*kdvOran;
+        double kdvliTutar=tutar+kdvTutar;
+        System.out.print(kdvliTutar);
+    }
+}
