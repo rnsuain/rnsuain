@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class uygulama {
+    public static void main (String[] args) {
+     //Değişkenleri tanımladım
+        int mat,fizik,kimya,turkce,muzik,tarih;
+        //Scanner sınıfını tanımladım.
+     Scanner inp= new Scanner(System.in);
+     //kullanıcıdan veri girişini istedim.
+      System.out.println("Mat notunuzu girin: ");
+      mat=inp.nextInt();
+      System.out.println("Fizik notunuzu girin: ");
+      fizik=inp.nextInt();
+      System.out.println("Kimya notunuzu girin: ");
+      kimya=inp.nextInt();
+      System.out.println("Türkçe notunuzu girin: ");
+      turkce=inp.nextInt();
+      System.out.println("Müzik notunuzu girin: ");
+      muzik=inp.nextInt();
+      System.out.println("Tarih notunuzu girin: ");
+      tarih=inp.nextInt();
+      //ortalama hesaplamak için verileri gir
+     int toplam= mat+fizik+kimya+turkce+muzik+tarih;
+     double sonuc=toplam/6;
+    System.out.println("Toplam:"+sonuc);
+        // Ortalamayı hesaplatıp sınıftan geçip geçmediğine bakmak için yazdım
+    if (sonuc>=60){
+        System.out.println("Dersten Geçtiniz!");
+    }else{
+        System.out.println("Dersten kaldınız.");
+       }
+      }
+    }
